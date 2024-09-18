@@ -54,7 +54,7 @@ export interface Post extends Document{
     comments:Commment[];
     upvotes: string[];
     upvotesCount:number;
-    image:string;
+    // image:string;
     datePosted:Date;
 }
 
@@ -76,10 +76,10 @@ export const postSchema:Schema<Post> = new mongoose.Schema({
         type:Number,
         required:true
     },
-    image:{
-        type:String,
-        required:true
-    },
+    // image:{
+    //     type:String,
+    //     required:true
+    // },
     datePosted:{
         type:Date,
         required:true
