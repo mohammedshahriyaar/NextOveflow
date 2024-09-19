@@ -70,12 +70,12 @@ const UserSchema:Schema<User> = new mongoose.Schema({
     },
     profilePic:{
         type:String,
-        required:true
+        required:false
     },
     notifications:[NotificationSchema],
     emailNotifications:{
         type:Boolean,
-        required:true
+        required:false
     }
 
 })
